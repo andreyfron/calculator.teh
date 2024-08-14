@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link   rel="stylesheet"   href="style.css" >
+<title>Калькулятор</title>
+</head>
+<body>
+<div class="general-block">
+    <div class="block"> 
+<div id="calculator">
+  <input type="text" id="output" disabled>
+
+  <div class="min-block">
+  <button class="button one"  onclick="appendNumber('1')">1</button>
+  <button class="button two" onclick="appendNumber('2')">2</button>
+  <button class="button three" onclick="appendNumber('3')">3</button>
+  <button class="button plus" onclick="setOperation('+')">+</button>
+ 
+  <button class="button four" onclick="appendNumber('4')">4</button>
+  <button class="button five" onclick="appendNumber('5')">5</button>
+  <button class="button six" onclick="appendNumber('6')">6</button>
+  <button class="button minus" onclick="setOperation('-')">-</button>
+ 
+  <button class="button seven" onclick="appendNumber('7')">7</button>
+  <button class="button eight" onclick="appendNumber('8')">8</button>
+  <button class="button nine" onclick="appendNumber('9')">9</button>
+  <button class="button multiply" onclick="setOperation('*')">*</button>
+
+  <button class="button zero" onclick="appendNumber('0')">0</button>
+  <button class="button equally" onclick="calculate()">=</button>
+  <button class="button return" onclick="clearOutput()">C</button>
+  <button class="button share" onclick="setOperation('/')">/</button>
+  </div>
+</div>
+ </div>
+ </div>
+
+
+<script src="skript.js"> </script>
+
+
+</body>
+</html>
